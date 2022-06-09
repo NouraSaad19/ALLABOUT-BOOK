@@ -36,10 +36,7 @@ The ease of adding books for writers. Also, users can reach more different books
 - Create, Read, Update, Delete user.
 
 ### Author
-- View books.
-- View the author books
-- the author added his book
-
+- Create, Read, Update, Delete book.
 
 ### User
 - View books.
