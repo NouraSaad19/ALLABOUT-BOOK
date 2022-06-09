@@ -43,6 +43,6 @@ The ease of adding books for writers. Also, users can reach more different books
 - View book information.
 - Search for author.
 - View all the books in the list
-- Add book in the list (name book , description about the book , start read , finsh read , progressions level )
+- Add book in the list (book , description about the book , start read , finsh read , progressions level )
 - Delete book from list
 - Add review on the book
