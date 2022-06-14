@@ -22,9 +22,9 @@ class ListRead(models.Model):
 
 
 class Review(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    listread = models.ForeignKey(ListRead, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    date = models.DateField(default=timezone)
+    date = models.DateField(auto_now_add=True)
     comment = models.TextField()
 
 

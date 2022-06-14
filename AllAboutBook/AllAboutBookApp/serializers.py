@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Book , ListRead
+from .models import Book , ListRead , Review
 from django.contrib.auth.models import User
 
 
@@ -42,3 +42,20 @@ class ListReadSerializerUpdate(serializers.ModelSerializer):
     class Meta:
         model = ListRead
         exclude = ["book", "user"]
+
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = '__all__'
+
+class ReviewSerializerView(serializers.ModelSerializer):
+    listread= ListReadSerializerView()
+    class Meta:
+        model = Review
+        fields = '__all__'
+
+class ReviewSerializerUpdate(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        exclude = ["listread", "user"]
+
