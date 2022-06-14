@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "01e35dd5-a757-469c-821a-1bd54582997f",
+		"name": "AllAboutBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER_AUTH",
+			"item": [
+				{
+					"name": "register",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/register_user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"register_user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"noura\" ,\r\n    \"password\" : \"n1234512345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/login_user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login_user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUTHOR",
+			"item": [
+				{
+					"name": "list_books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/list_Book/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"list_Book",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTUwMjg3LCJpYXQiOjE2NTUxMTgyODcsImp0aSI6IjI5OGRkZTM4YmViMzRmMzlhYTIxNGQyNTVmNTUxMzEyIiwidXNlcl9pZCI6NH0.OC1qt5L2BuUaIM3rmPRwwn07C7MjL-TNP_dqMfEwefo",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name_book\": \"Crenshaw \",\r\n            \"Discrption_book\": \"Jackson and his family have fallen on hard times. There's no more money for rent. And not much for food, either. His parents, his little sister, and their dog may have to live in their minivan. Again.Crenshaw is a cat. He's large, he's outspoken, and he's imaginary. He has come back into Jackson's life to help him. But is an imaginary friend enough to save this family from losing everything?\",\r\n            \"Date_of_publish\": \"2017-08-15\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/add_Book/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"add_Book",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_book",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MzY3MzM3LCJpYXQiOjE2NTQ5MzUzMzcsImp0aSI6Ijc3YzcxZWNlZTlkZTRlMjJhMDczNWMxNDA5NmM4Mjc0IiwidXNlcl9pZCI6Mn0.iX37kNK21XAAkVbNt0Xi_e3iC62EaIWQwmZTRTn_e3k",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name_book\": \"java\",\r\n            \"Discrption_book\": \"interdction in python\",\r\n            \"Date_of_publish\": \"2022-06-10\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/update_book/ja",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"update_book",
+								"ja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_book",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MzY3MzM3LCJpYXQiOjE2NTQ5MzUzMzcsImp0aSI6Ijc3YzcxZWNlZTlkZTRlMjJhMDczNWMxNDA5NmM4Mjc0IiwidXNlcl9pZCI6Mn0.iX37kNK21XAAkVbNt0Xi_e3iC62EaIWQwmZTRTn_e3k",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/delete_book/14",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"delete_book",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search_books",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "list_books",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Search_book",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "View_ListRead",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "add_book_in_ListRead",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MzY3MzM3LCJpYXQiOjE2NTQ5MzUzMzcsImp0aSI6Ijc3YzcxZWNlZTlkZTRlMjJhMDczNWMxNDA5NmM4Mjc0IiwidXNlcl9pZCI6Mn0.iX37kNK21XAAkVbNt0Xi_e3iC62EaIWQwmZTRTn_e3k",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/add_in_ListRead/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"add_in_ListRead",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_ListRead",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NDcyNTU4LCJpYXQiOjE2NTUwNDA1NTgsImp0aSI6ImU2YTI0Yzc3NjM1OTRhODhiYjlhZTRkOWE2NjgyM2NjIiwidXNlcl9pZCI6Mn0.a-Bwex_5106jT_Ar96RLhpRwx0bVStBX1QgaDwypOyY",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"start_date\" : \"2022-5-1\" ,\r\n    \"finish_date\" : \"2022-6-1\" ,\r\n    \"progression_level\" :90\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/update_ListRead/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"update_ListRead",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_book_from_ListRead",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MzY3MzM3LCJpYXQiOjE2NTQ5MzUzMzcsImp0aSI6Ijc3YzcxZWNlZTlkZTRlMjJhMDczNWMxNDA5NmM4Mjc0IiwidXNlcl9pZCI6Mn0.iX37kNK21XAAkVbNt0Xi_e3iC62EaIWQwmZTRTn_e3k",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/delete_ListRead/12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"delete_ListRead",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_review",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ListReads_with_Review",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update_review",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "delete_review",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1NTM5OTUxLCJpYXQiOjE2NTUxMDc5NTEsImp0aSI6IjZlMmNkOTZhYTY1MjQ4MWFiMDgwZDk4NzhmYzM3Y2QzIiwidXNlcl9pZCI6M30.Y7zVHkJ787QpDtzGddY0LOsagGf2GHArJ8xjnXUAx3Q",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/delete_review/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"delete_review",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
