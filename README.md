@@ -37,12 +37,14 @@ The ease of adding books for writers. Also, users can reach more different books
 
 ### Author
 - Create, Read, Update, Delete book.
+- View books.
+- Search for book.
 
 ### User
-- View books.
-- View book information.
-- Search for author.
-- View all the books in the list
+- View books with book information..
+- Search for book.
 - Add book in the list (book , description about the book , start read , finsh read , progressions level )
+- View all the books in the list
 - Delete book from list
+- Update on achievement percent
 - Add review on the book
