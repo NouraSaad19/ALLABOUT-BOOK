@@ -24,7 +24,7 @@ The ease of adding books for writers. Also, users can reach more different books
 - Managing adding books by the writers
 - Simple and easy adding books process for the writers.
 - Easy process for listing books by the users -readers-
-- Reading achievement percent.
+
 
 
 ## User Stories
