@@ -1,6 +1,5 @@
 # ALLABOUT-BOOK
 
-# Project link : https://allabout-books.herokuapp.com/
 
 ## Idea:
 
@@ -49,3 +48,5 @@ The ease of adding books for writers. Also, users can reach more different books
 - Delete book from list
 - Update on achievement percent
 - Add review on the book
+
+# Project link : https://allabout-books.herokuapp.com/
